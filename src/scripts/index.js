@@ -1,10 +1,10 @@
 import _ from 'lodash';
-// import '../css/styles.css';
+import '../css/styles.css';
 
 function component() {
     const element = document.createElement('div');
   
-    element.innerHTML = _.join(['Hello', 'webpack', 'world!!!'], ' ');
+    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
     // element.classList.add('hello');
 
     return element;
@@ -12,6 +12,6 @@ function component() {
   
   document.body.appendChild(component());
 
-//   if (module.hot) {
-//     module.hot.accept()
-//   }
+  if (module.hot) {
+    module.hot.accept()
+  }

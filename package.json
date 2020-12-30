@@ -3,22 +3,14 @@
     "version": "1.0.0",
     "description": "Developed (and will be deployed) using webpack, this page showcases my skills and projects I've worked on.",
     "private": true,
-    "main": "index.js",
     "scripts": {
         "dev": "webpack serve",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/David-again/portfolio-webpack.git"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/David-again/portfolio-webpack/issues"
-    },
-    "homepage": "https://github.com/David-again/portfolio-webpack#readme",
     "dependencies": {
         "lodash": "^4.17.20",
         "normalize.css": "^8.0.1"

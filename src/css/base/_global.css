@@ -6,7 +6,7 @@ html {
 .container {
     height: 97vh;
     width: 98vw;
-    min-width: 540px;
+    /* min-width: 540px; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -39,4 +39,3 @@ html {
         /* margin-top: 0; */
     /* }
 } */
- */

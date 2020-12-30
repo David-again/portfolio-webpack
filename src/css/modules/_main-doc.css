@@ -1,13 +1,10 @@
-/* @import "./images/workstation-option1.jpeg"; */
-
 main h1 {
-    /* font-weight: 800; */
     display: inline-block;
 }
 
 .main-doc__home {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
 }
 
