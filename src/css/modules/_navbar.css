@@ -1,12 +1,9 @@
-#navbar {
-    /* background-color: #dbf6e9; */
-    background-color: #bedcfa;
-    /* color: #59886b; */
-    color: #153e90;
-    /* text-align: center; */
-    border: solid #153e90 2px;
-    /* overflow: auto; */
 
+#navbar {
+    background-color: $lightGreen;
+    color: $darkGreen;
+    border: solid $darkGreen 2px;
+    /* overflow: auto; */
     /* padding: 30px; */
 }
 
@@ -32,18 +29,16 @@
 #navbar a {
     /* display: block; */
     text-decoration: none;
-    /* color: #59886b; */
-    color: #153e90;
+    color: $darkGreen;
 }
 
 /* #navbar li:hover {
-    background-color: #59886b;
-    background-color: #153e90;
+    background-color: $darkGreen;
 } */
 
 #navbar a:hover {
-    /* background-color: #59886b; */
-    background-color: #153e90;
+    /* background-color: $darkGreen; */
+    background-color: $darkGreen;
     color: #fff;
 }
 

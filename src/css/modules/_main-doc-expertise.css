@@ -1,0 +1,27 @@
+.main-doc-expertise {
+    background-color: $lightGreen;
+    
+    padding: 1rem;
+    @media(min-width: 640px) {
+        padding: 2.5rem;
+    }
+
+    &__content {
+        
+    }
+
+    &__tech-gallery {
+        text-align: center;
+        margin:30px 0 0;
+    }
+
+    &__tech-image {
+        height: 50px;
+        margin: 5px 5px;
+        @media (min-width:640px) {
+            height: 100px;
+            margin: 10px 20px;
+        }
+    }
+}
+

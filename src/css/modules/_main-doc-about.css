@@ -1,0 +1,18 @@
+.main-doc-about {
+    background-color: $lightGreen;
+
+    padding: 1rem;
+    @media(min-width: 640px) {
+        padding: 2.5rem;
+    }
+
+    &__text-content {
+        text-align: justify;
+    }
+
+    &__selfie {
+        width: 150px;
+        border: solid 5px $darkGreen;
+        border-radius: 40px;
+    }
+}
