@@ -1,12 +1,30 @@
 .main-doc-contact {
-    background-color: $mediumGreen;
-
-    padding: 1rem;
-    @media(min-width: 640px) {
-        padding: 2.5rem;
+    background-color: $themeMedium;
+    
+    & a {
+        text-decoration: none;
     }
 
-    &__content {
+    &__icon {
+        color: $themeDark;
+        font-size: 2rem;
+        /* margin: 1rem 1.5rem 0.5rem; */
+        padding: 1.2rem;
+        @media(min-width: 640px) {
+            font-size: 2.5rem;
+            margin-left: 2.5rem;
+        }
         
+        &:hover {
+            color: $themeLight;
+            background-color: $themeDark;
+        }
+    }
+
+    &__copyright {
+        margin: 0;
+        font-size: 0.75rem;
+        padding-bottom: 0.5rem;
     }
 }
+

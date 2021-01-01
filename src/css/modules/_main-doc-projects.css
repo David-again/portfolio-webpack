@@ -1,12 +1,11 @@
 .main-doc-projects {
-    background-color: $mediumGreen;
-    
+    background-color: $themeMedium;
     padding: 1rem;
     @media(min-width: 640px) {
         padding: 2.5rem;
     }
 
-    &__content {
-        
+    &__text-content {
+        text-align: justify;
     }
 }

@@ -4,5 +4,6 @@
 @import "./modules/_main-doc-home.css";
 @import "./modules/_main-doc-about.css";
 @import "./modules/_main-doc-projects.css";
-@import "./modules/_main-doc-expertise.css";
+@import "./modules/_main-doc-skills.css";
 @import "./modules/_main-doc-contact.css";
+@import "./modules/_footer.css";

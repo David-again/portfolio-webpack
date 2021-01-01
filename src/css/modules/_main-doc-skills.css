@@ -1,18 +1,17 @@
-.main-doc-expertise {
-    background-color: $lightGreen;
-    
+.main-doc-skills {
+    background-color: $themeLight;
     padding: 1rem;
     @media(min-width: 640px) {
         padding: 2.5rem;
     }
 
-    &__content {
-        
+    &__text-content {
+        text-align: justify;
     }
-
+    
     &__tech-gallery {
         text-align: center;
-        margin:30px 0 0;
+        margin: 2rem 0 0;
     }
 
     &__tech-image {

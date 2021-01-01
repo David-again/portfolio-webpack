@@ -1,45 +1,31 @@
 
-#navbar {
-    background-color: $lightGreen;
-    color: $darkGreen;
-    border: solid $darkGreen 2px;
-    /* overflow: auto; */
-    /* padding: 30px; */
+.navbar {
+    top: 0;
+    left: 0;
+    padding: 0;
+    background-color: $themeDark;
+    /* border: solid $themeDark 2px; */
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+
+    & a {
+        display: inline-block;
+        text-decoration: none;
+        color: $themeLight;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        @media(min-width: 640px) {
+            font-weight: 500;
+            font-size: 1.25rem;
+            margin: 0 2.5 rem;
+        }
+        
+        &:hover {
+            background-color: $themeLight;
+            color: $themeDark;
+        }
+    
+    }
 }
-
-#navbar ol{
-    list-style-type: none;
-    padding-inline-start: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    /* display: inline-block; */
-    /* margin-left: auto;
-    margin-right: auto; */
-}
-
-#navbar li {
-    float: left;
-    /* padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem; */
-    padding: 1rem;
-}
-
-#navbar a {
-    /* display: block; */
-    text-decoration: none;
-    color: $darkGreen;
-}
-
-/* #navbar li:hover {
-    background-color: $darkGreen;
-} */
-
-#navbar a:hover {
-    /* background-color: $darkGreen; */
-    background-color: $darkGreen;
-    color: #fff;
-}
-
-

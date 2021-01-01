@@ -1,0 +1,14 @@
+.footer {
+    overflow: auto;
+    background-color: $themeDark;
+    color: $themeLight;
+
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
+    /* position: fixed; */
+
+        &__p {
+            /* perhaps make this a carousel ?? */
+        }
+}
