@@ -1,0 +1,31 @@
+
+.navbar {
+    top: 0;
+    left: 0;
+    padding: 0;
+    background-color: $themeDark;
+    /* border: solid $themeDark 2px; */
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+
+    & a {
+        display: inline-block;
+        text-decoration: none;
+        color: $themeLight;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        @media(min-width: 640px) {
+            font-weight: 500;
+            font-size: 1.25rem;
+            margin: 0 2.5 rem;
+        }
+        
+        &:hover {
+            background-color: $themeLight;
+            color: $themeDark;
+        }
+    
+    }
+}

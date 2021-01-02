@@ -1,0 +1,36 @@
+html {
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 180%;
+    text-align: center;
+    color: $themeDark;
+    /* font-family: 'Open Sans', Lato, Raleway, Montserrat, 'PT Sans'; */
+    /* font-family: Cardo, Merriweather, 'PT Serif'; */
+    /* font-family: 'Montserrat'; */
+  }
+
+  /* #main-doc {
+      width: 100%;
+  } */
+
+  /* .container {
+      position: relative;
+  } */
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "navbar"
+        "main-doc"
+        "footer";
+} */
+
+ /* .main-doc-projects__content, .main-doc-expertise__content, .main-doc-contact__content, .main-doc-misc__content {
+    padding: 1rem;
+    @media(min-width: 640px) {
+        padding: 2.5rem;
+    }
+} */

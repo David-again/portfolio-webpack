@@ -1,0 +1,15 @@
+/* Color Themes */
+$darkBlue: #153e90;
+$lightBlue: #bedcfa;
+
+$darkGreen: #59886b;
+$mediumGreen: #8ECFAE;
+$lightGreen: #dbf6e9;
+
+$lightBrown: #F3EFE0;
+
+
+/* Globally used color-theme variables */
+$themeDark: $darkBlue;
+$themeMedium: $lightBrown;
+$themeLight: $lightBlue;

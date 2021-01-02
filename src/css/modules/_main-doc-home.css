@@ -1,0 +1,54 @@
+.main-doc-home {
+    background-color: $themeDark;
+    position: relative;
+    max-height: 90vh;
+    overflow: hidden;
+
+    &__back-image{
+        /* object-fit: cover; */
+        /* position: fixed; */
+        width: 100%;
+        top: 0;
+        left: 0;
+        /* right: 0;
+        bottom: 0; */
+        /* position: fixed; */
+        /* width: auto; */
+        /* height: 100vh; */
+    }
+    
+    &__text-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: $themeLight;
+    }
+
+    &__title {
+        line-height: 125%;
+        font-size: 2.5rem;
+        @media (min-width:640px) {
+            font-size: 3.5rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+    }
+
+    &__icon {
+        color: $themeLight;
+        padding: 1.2rem;
+        font-size: 1.5rem;
+        @media(min-width: 640px) {
+            font-size: 2rem;
+        }
+        
+        &:hover {
+            color: $themeDark;
+            background-color: $themeLight;
+        }
+    }
+}

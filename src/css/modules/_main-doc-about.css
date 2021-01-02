@@ -1,0 +1,35 @@
+.main-doc-about {
+    background-color: $themeLight;
+    padding: 1rem;
+    @media(min-width: 640px) {
+        padding: 2.5rem;
+    }
+
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "about-me"
+        "my-selfie"
+        "my-background"; */
+
+    &__text-content {
+        text-align: justify;
+    }
+
+    &__selfie {
+        width: 150px;
+        border: solid 5px $themeDark;
+        border-radius: 40px;
+    }
+}
+
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "navbar"
+        "main-doc"
+        "footer";
+} */

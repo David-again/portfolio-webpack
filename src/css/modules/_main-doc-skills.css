@@ -1,0 +1,26 @@
+.main-doc-skills {
+    background-color: $themeLight;
+    padding: 1rem;
+    @media(min-width: 640px) {
+        padding: 2.5rem;
+    }
+
+    &__text-content {
+        text-align: justify;
+    }
+    
+    &__tech-gallery {
+        text-align: center;
+        margin: 2rem 0 0;
+    }
+
+    &__tech-image {
+        height: 50px;
+        margin: 5px 5px;
+        @media (min-width:640px) {
+            height: 100px;
+            margin: 10px 20px;
+        }
+    }
+}
+
