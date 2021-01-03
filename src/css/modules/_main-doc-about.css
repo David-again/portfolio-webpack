@@ -1,3 +1,25 @@
+.about-container {
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-areas:         
+            "about-me"
+            "my-selfie"
+            "my-background";
+}
+
+@media (min-width: 800px) {
+    .about-container {
+        /* display: grid; */
+        grid-gap: 2rem;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "about-me my-selfie my-background";
+    }
+}
+
 .main-doc-about {
     background-color: $themeLight;
     padding: 1rem;
@@ -5,31 +27,31 @@
         padding: 2.5rem;
     }
 
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "about-me"
-        "my-selfie"
-        "my-background"; */
-
     &__text-content {
         text-align: justify;
+        @media(min-width: 640px) {
+            text-align: left;
+        }
+
+        &--about-me {
+            grid-area: about-me;
+        }
+        
+        &--my-background {
+            grid-area: my-background;
+
+        }
     }
 
     &__selfie {
+        grid-area: my-selfie;
         width: 150px;
+        justify-self: center;
         border: solid 5px $themeDark;
         border-radius: 40px;
+        @media(min-width: 800px) {
+            align-self: center;
+            border-radius: 75px;
+        }
     }
 }
-
-/* .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "navbar"
-        "main-doc"
-        "footer";
-} */

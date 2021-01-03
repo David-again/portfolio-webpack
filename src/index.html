@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <!-- <div class="container"> -->
     <div class="navbar">
         <a href="#home" class="nav-link">HOME</a>
         <a href="#about" class="nav-link">ABOUT</a>
@@ -21,9 +20,9 @@
     <main id="main-doc">
 
         <div class="main-doc-home" id="home">
-            <picture class="main-doc-home__back-image">
+            <picture>
                 <source srcset="images/home-bgnd/workstation-landscape1-1536x981.jpg" media="(min-width: 650px)">
-                <img src="images/home-bgnd/workstation-portrait-700x1152.jpg" alt="Laptop Workstation">
+                <img class="main-doc-home__back-image" src="images/home-bgnd/workstation-portrait-700x1152.jpg" alt="Laptop Workstation">
             </picture>
             <div class="main-doc-home__text-content">
                 <h1 class="main-doc-home__title">David Ogunbanjo </h1>
@@ -40,56 +39,62 @@
         </div>
 
         <div class="main-doc-about" id="about">
-            <div class="main-doc-about__text-content">
-                <h2>About Me </h2>
-                <p> Hi! I’m David, a self-taught web developer. </p>
-                <p> I enjoy the <strong> <em>process</em> </strong> of solving problems, and therefore work hard and move swiftly from one project to the next. But at the same time, a keen eye for detail sometimes keeps me iterating over particularly interesting
-                    systems/solutions, in order to improve them/make them better. </br>
-                    The other thing I enjoy besides problem-solving is working in teams. So I encourage you to explore my portfolio and my github pages; You’d surely find something we could collaborate on. Feel free to connect!
-                </p>
-            </div>
-            <img class="main-doc-about__selfie" src="/images/my_selfie-200x200.jpg" alt="David Ogunbanjo">
-            <div class="main-doc-about__text-content">
-                <h2>My Background</h2>
-                <p> I began programming as a teenager in the Y2K era, and went on to study Computer Science at the undergraduate level few years later. In addition to that, I now hold a postgraduate degree in Aerospace Engineering, as well as Pilot Licences
-                    on Airplanes, Helicopters and Drones.</p>
-                <p>The stay-at-home COVID circumstance of the past year was an opportune moment for me to re-discover software development. Now, when I’m not busy planning or executing a flight (on duty or at the local flying club), I’m putting some effort
-                    into my next development project, or polishing up the current one.
-                </p>
+            <div class="about-container section-wrapper">
+                <div class="main-doc-about__text-content main-doc-about__text-content--about-me">
+                    <h2>About Me </h2>
+                    <p> Hi! I’m David, a self-taught web developer. </p>
+                    <p> I enjoy the <strong> <em>process</em> </strong> of solving problems, and therefore work hard and move swiftly from one project to the next. But at the same time, a keen eye for detail sometimes keeps me iterating over particularly
+                        interesting systems/solutions (contiouos improvement). </br>
+                        The other thing I enjoy besides problem-solving is working in teams. So I encourage you to explore my portfolio and my github pages; You’d surely find something we could collaborate on. Feel free to connect!
+                    </p>
+                </div>
+                <img class="main-doc-about__selfie" src="/images/my_selfie-200x200.jpg" alt="David Ogunbanjo">
+                <div class="main-doc-about__text-content main-doc-about__text-content--my-background">
+                    <h2>My Background</h2>
+                    <p> I began programming as a teenager in the Y2K era, and went on to study Computer Science at the undergraduate level few years later. In addition to that, I now hold a postgraduate degree in Aerospace Engineering, as well as Pilot Licences
+                        on Airplanes, Helicopters and Drones.</p>
+                    <p>The stay-at-home COVID circumstance of the past year was an opportune moment for re-discovering software development. Now, whenever I’m not busy planning or executing a flight (on duty or at the local flying club), I’m putting some
+                        effort into my next development project, or polishing up the current one.
+                    </p>
+                </div>
             </div>
         </div>
 
         <div class="main-doc-projects" id="projects">
-            <div class="main-doc-projects__text-content">
-                <h2>My Projects </h2>
-                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-                    more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+            <div class="section-wrapper">
+                <div class="main-doc-projects__text-content">
+                    <h2>My Projects </h2>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
             </div>
         </div>
 
         <div class="main-doc-skills" id="skills">
-            <div class="main-doc-skills__text-content">
-                <h2>Web Development Skills </h2>
-                <p> Here are some technologies that I have experience working with: </p>
-            </div>
-            <div class="main-doc-skills__tech-gallery">
-                <img class="main-doc-skills__tech-image" src="images/logos/javascript-logo.png" alt="JavaScript logo">
-                <img class="main-doc-skills__tech-image" src="images/logos/reactJS-logo.png" alt="ReactJS logo">
-                <img class="main-doc-skills__tech-image" src="images/logos/nodeJS-logo.png" alt="NodeJS logo">
-                <img class="main-doc-skills__tech-image" src="images/logos/html-logo.png" alt="HTML logo">
-                <img class="main-doc-skills__tech-image" src="images/logos/css-logo.png" alt="CSS logo">
-                <img class="main-doc-skills__tech-image" src="images/logos/mongoDB-logo.png" alt="MongoDB logo">
-                <img class="main-doc-skills__tech-image" src="images/logos/gcp-logo.png" alt="GCP logo">
-                <img class="main-doc-skills__tech-image" src="images/logos/aws-logo.png" alt="AWS logo">
-                <img class="main-doc-skills__tech-image" src="images/logos/adobe-photoshop-logo.png" alt="Photoshop logo">
-                <img class="main-doc-skills__tech-image" src="images/logos/bootstrap-logo.png" alt="Bootstrap logo">
-                <img class="main-doc-skills__tech-image" src="images/logos/jquery-logo.png" alt="jQuery logo">
+            <div class="section-wrapper">
+                <div class="main-doc-skills__text-content">
+                    <h2>Web Development Skills </h2>
+                    <p> Here are some technologies that I have experience working with: </p>
+                </div>
+                <div class="main-doc-skills__tech-gallery">
+                    <img class="main-doc-skills__tech-image" src="images/logos/javascript-logo.png" alt="JavaScript logo">
+                    <img class="main-doc-skills__tech-image" src="images/logos/reactJS-logo.png" alt="ReactJS logo">
+                    <img class="main-doc-skills__tech-image" src="images/logos/nodeJS-logo.png" alt="NodeJS logo">
+                    <img class="main-doc-skills__tech-image" src="images/logos/html-logo.png" alt="HTML logo">
+                    <img class="main-doc-skills__tech-image" src="images/logos/css-logo.png" alt="CSS logo">
+                    <img class="main-doc-skills__tech-image" src="images/logos/mongoDB-logo.png" alt="MongoDB logo">
+                    <img class="main-doc-skills__tech-image" src="images/logos/gcp-logo.png" alt="GCP logo">
+                    <img class="main-doc-skills__tech-image" src="images/logos/aws-logo.png" alt="AWS logo">
+                    <img class="main-doc-skills__tech-image" src="images/logos/adobe-photoshop-logo.png" alt="Photoshop logo">
+                    <img class="main-doc-skills__tech-image" src="images/logos/bootstrap-logo.png" alt="Bootstrap logo">
+                    <img class="main-doc-skills__tech-image" src="images/logos/jquery-logo.png" alt="jQuery logo">
+                </div>
             </div>
         </div>
 
@@ -110,7 +115,6 @@
     <footer class="footer">
         <p footer_p>...if you can <strong><em>dream</em></strong> it, I can <strong><em>code</em></strong> it !</p>
     </footer>
-    <!-- </div> -->
     <script src="bundle.js"></script>
 </body>
 
