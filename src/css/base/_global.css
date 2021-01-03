@@ -1,6 +1,5 @@
-html {
-    top: 0;
-    left: 0;
+body {
+    margin: 0;
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
     line-height: 180%;
@@ -11,6 +10,10 @@ html {
     /* font-family: 'Montserrat'; */
   }
 
+  .section-wrapper {
+      max-width: 920px;
+      margin: auto;
+  }
   /* #main-doc {
       width: 100%;
   } */
