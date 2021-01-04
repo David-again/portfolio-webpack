@@ -1,17 +1,26 @@
 import _ from 'lodash';
 import '../css/styles.css';
+import MobileMenu from './modules/mobile-menu';
 
-function component() {
-    const element = document.createElement('div');
-  
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    // element.classList.add('hello');
+let mobileMenu = new MobileMenu();
 
-    return element;
-  }
-  
-  // document.body.appendChild(component());
+
 
   if (module.hot) {
     module.hot.accept()
   }
+
+
+
+
+
+  // console.log("Hello JavaScript!!!");
+// function component() {
+//     const element = document.createElement('div');
+  
+//     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+//     // element.classList.add('hello');
+
+//     return element;
+//   }
+  // document.body.appendChild(component());

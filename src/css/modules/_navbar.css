@@ -1,31 +1,93 @@
 
 .navbar {
-    top: 0;
-    left: 0;
-    padding: 0;
-    background-color: $themeDark;
-    /* border: solid $themeDark 2px; */
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-
-    & a {
-        display: inline-block;
-        text-decoration: none;
-        color: $themeLight;
-        padding: 10px;
-        font-weight: 700;
-        font-size: 0.9rem;
-        @media(min-width: 640px) {
-            font-weight: 500;
-            font-size: 1.25rem;
-            margin: 0 2.5 rem;
-        }
-        
-        &:hover {
-            background-color: $themeLight;
-            color: $themeDark;
-        }
+    &__menu-icon {
+        /* background-color: #fff; */
+        width: 20px; height: 20px;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        z-index: 4;
     
+        &::before {
+            content: "";
+            background-color: #fff;
+            width: 20px; height: 3px;
+            position: absolute;
+            top: 0; left: 0;
+            /* transition: all 0.3s ease-out;
+            transform-origin: 0 0; */
+        }
+
+        &__middle {
+            background-color: #fff;
+            width: 20px; height: 3px;
+            position: absolute;
+            top: 8px; left: 0;
+            /* transition: all 0.3s ease-out;
+            transform-origin: 0 50%; */
+        }
+
+        &::after {
+            content: "";
+            background-color: #fff;
+            width: 20px; height: 3px;
+            position: absolute;
+            bottom: 0; left: 0;
+            /* transition: all 0.3s ease-out;
+            transform-origin: 0 100%; */
+        }
+        @mixin atSmall {
+            display: none;
+        }
+    }
+
+    &__brand{
+        display: none;
+        @mixin atLarge {
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 3;
+            height: 60px;}
+    }
+
+    &__menu-content {
+        display: none;
+        @mixin atSmall {
+            top: 0;
+            left: 0;
+            padding: 0;
+            /* background-color: rgba($themeDark, 0.5); */
+            background-color: $themeDark;
+            width: 100%;
+            position: fixed;
+            z-index: 2;
+            display: block;
+        }
+        /* @media (min-width: 640px) {
+            display: block;
+        } */
+
+        & a {
+            display: inline-block;
+            text-decoration: none;
+            color: $themeLight;
+            padding: 1rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            @mixin atMedium {
+            /* @media(min-width: 640px) { */
+                font-weight: 500;
+                font-size: 1.25rem;
+                margin: 0 2rem;
+            }
+            
+            &:hover {
+                background-color: $themeLight;
+                color: $themeDark;
+            }
+        
+        }
     }
 }
