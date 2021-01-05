@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import '../css/styles.css';
-import MobileMenu from './modules/mobile-menu';
+import MobileMenu from './modules/Mobile-Menu';
 
 let mobileMenu = new MobileMenu();
 

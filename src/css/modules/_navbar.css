@@ -1,7 +1,19 @@
 
 .navbar {
+    &__brand{
+        display: none;
+        @mixin atLarge {
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 3;
+            height: 60px;}
+    }
+
     &__menu-icon {
         /* background-color: #fff; */
+        background-color: $themeDark;
         width: 20px; height: 20px;
         position: absolute;
         top: 20px;
@@ -41,20 +53,8 @@
         }
     }
 
-    &__brand{
-        display: none;
-        @mixin atLarge {
-            display: block;
-            position: fixed;
-            top: 0;
-            right: 0;
-            z-index: 3;
-            height: 60px;}
-    }
 
     &__menu-content {
-        display: none;
-        @mixin atSmall {
             top: 0;
             left: 0;
             padding: 0;
@@ -63,8 +63,10 @@
             width: 100%;
             position: fixed;
             z-index: 2;
-            display: block;
-        }
+            display: none;
+            @mixin atSmall {
+                display: block;
+            }
         /* @media (min-width: 640px) {
             display: block;
         } */
@@ -88,6 +90,9 @@
                 color: $themeDark;
             }
         
+        }
+        &--is-visible {
+            display: block;
         }
     }
 }
