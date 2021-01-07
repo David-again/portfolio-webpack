@@ -9,7 +9,13 @@ $lightGreen: #dbf6e9;
 $lightBrown: #F3EFE0;
 
 
-/* Globally used color-theme variables */
+/* Globally used color-theme variables are initialized centrally from here */
 $themeDark: $darkBlue;
 $themeMedium: $lightBrown;
 $themeLight: $lightBlue;
+
+/* Comment the 3 lines above and uncomment the 3 lines below to change page theme to green. */
+
+/* $themeDark: $darkGreen;
+$themeMedium: $lightGreen;
+$themeLight: $lightGreen; */

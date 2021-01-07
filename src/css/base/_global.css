@@ -4,6 +4,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 180%;
     text-align: center;
+    background-color: $themeLight;
     color: $themeDark;
     /* font-family: 'Open Sans', Lato, Raleway, Montserrat, 'PT Sans'; */
     /* font-family: Cardo, Merriweather, 'PT Serif'; */

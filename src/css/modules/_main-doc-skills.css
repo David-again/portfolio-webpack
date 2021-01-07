@@ -1,7 +1,8 @@
 .main-doc-skills {
     background-color: $themeLight;
     padding: 1rem;
-    @media(min-width: 640px) {
+    /* @media(min-width: 640px) { */
+    @mixin atMedium {
         padding: 2.5rem;
     }
 
@@ -17,7 +18,8 @@
     &__tech-image {
         height: 50px;
         margin: 5px 5px;
-        @media (min-width:640px) {
+        /* @media (min-width:640px) { */
+        @mixin atMedium {
             height: 100px;
             margin: 10px 20px;
         }

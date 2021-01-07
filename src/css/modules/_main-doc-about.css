@@ -9,7 +9,8 @@
             "my-background";
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) { */
+@mixin atMedium {
     .about-container {
         /* display: grid; */
         grid-gap: 2rem;
@@ -23,13 +24,15 @@
 .main-doc-about {
     background-color: $themeLight;
     padding: 1rem;
-    @media(min-width: 640px) {
+    /* @media(min-width: 640px) { */
+    @mixin atSmall {
         padding: 2.5rem;
     }
 
     &__text-content {
         text-align: justify;
-        @media(min-width: 640px) {
+        /* @media(min-width: 640px) { */
+        @mixin atSmall {
             text-align: left;
         }
 
@@ -49,7 +52,8 @@
         justify-self: center;
         border: solid 5px $themeDark;
         border-radius: 40px;
-        @media(min-width: 800px) {
+        /* @media(min-width: 800px) { */
+        @mixin atMedium {
             align-self: center;
             border-radius: 75px;
         }

@@ -4,8 +4,6 @@ import MobileMenu from './modules/Mobile-Menu';
 
 let mobileMenu = new MobileMenu();
 
-
-
   if (module.hot) {
     module.hot.accept()
   }
