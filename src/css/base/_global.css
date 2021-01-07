@@ -4,32 +4,21 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 180%;
     text-align: center;
+    background-color: $themeLight;
     color: $themeDark;
     /* font-family: 'Open Sans', Lato, Raleway, Montserrat, 'PT Sans'; */
     /* font-family: Cardo, Merriweather, 'PT Serif'; */
     /* font-family: 'Montserrat'; */
   }
 
+  /* img {
+      max-width: 100%;
+  } */
+
   .section-wrapper {
       max-width: 920px;
       margin: auto;
   }
-  /* #main-doc {
-      width: 100%;
-  } */
-
-  /* .container {
-      position: relative;
-  } */
-/* .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "navbar"
-        "main-doc"
-        "footer";
-} */
 
  /* .main-doc-projects__content, .main-doc-expertise__content, .main-doc-contact__content, .main-doc-misc__content {
     padding: 1rem;

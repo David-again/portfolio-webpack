@@ -8,6 +8,7 @@
         /* object-fit: cover; */
         /* position: fixed; */
         width: 100%;
+        filter: brightness(65%);
         /* top: 0;
         left: 0; */
         /* right: 0;
@@ -29,7 +30,7 @@
     &__title {
         line-height: 125%;
         font-size: 2.5rem;
-        @media (min-width:640px) {
+        @mixin atMedium {
             font-size: 3.5rem;
         }
     }
@@ -42,8 +43,9 @@
         color: $themeLight;
         padding: 1.2rem;
         font-size: 1.5rem;
-        @media(min-width: 640px) {
+        @mixin atMedium {
             font-size: 2rem;
+            border-radius: 15% 40%;
         }
         
         &:hover {

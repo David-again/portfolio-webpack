@@ -1,31 +1,131 @@
 
 .navbar {
-    top: 0;
-    left: 0;
-    padding: 0;
-    background-color: $themeDark;
-    /* border: solid $themeDark 2px; */
-    width: 100%;
-    position: fixed;
-    z-index: 2;
+    &__brand{
+        display: none;
+        @mixin atLarge {
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 3;
+            height: 60px;}
+    }
 
-    & a {
-        display: inline-block;
-        text-decoration: none;
-        color: $themeLight;
-        padding: 10px;
-        font-weight: 700;
-        font-size: 0.9rem;
-        @media(min-width: 640px) {
-            font-weight: 500;
-            font-size: 1.25rem;
-            margin: 0 2.5 rem;
-        }
-        
-        &:hover {
-            background-color: $themeLight;
-            color: $themeDark;
-        }
+    &__menu-icon {
+        /* background-color: #fff; */
+        background-color: $themeDark;
+        border: 5px solid $themeDark;
+        border-radius: 5px;
+        width: 20px; height: 20px;
+        position: fixed;
+        top: 20px;
+        left: 10px;
+        z-index: 4;
     
+        &::before {
+            content: "";
+            background-color: #fff;
+            border-radius: 5px;
+            width: 20px; height: 3px;
+            position: absolute;
+            top: 0; left: 0;
+            transform-origin: left top;
+            transition: transform 0.3s ease-out;
+            /* transform-origin: 0 0; */
+        }
+
+        &__middle {
+            background-color: #fff;
+            border-radius: 5px;
+            width: 20px; height: 3px;
+            position: absolute;
+            top: 8px; left: 0;
+            transition: all 0.3s ease-out;
+            transform-origin: left center;
+            /* transform-origin: 0 50%; */
+        }
+
+        &::after {
+            content: "";
+            background-color: #fff;
+            border-radius: 5px;
+            width: 20px; height: 3px;
+            position: absolute;
+            bottom: 0; left: 0;
+            transform-origin: left bottom;
+            transition: transform 0.3s ease-out;
+            /* transform-origin: 0 100%;  */
+        }
+        @mixin atSmall {
+            display: none;
+        }
+    }
+
+    &__menu-icon--close-x {
+        &::before {
+            transform: rotate(45deg) scaleX(1.25);
+        }
+
+        .navbar__menu-icon__middle {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        &::after {
+            transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+        }
+    }
+
+
+    &__menu-content {
+            /* background: $themeDark.5; */
+            background-color: rgba($themeDark, 0.95);
+            position: fixed;
+            opacity: 0;
+            transform: scale(0.3);
+            transform-origin: top left;
+            transition: all 0.3s ease-out;
+            z-index: -1;
+            @mixin atSmall {
+                opacity: 1;
+                transform: scale(1);
+                z-index: 2;
+                width: 100%;
+                background-color: rgba($themeDark, 0.7);
+            }
+
+        & a {
+            text-decoration: none;
+            color: $themeLight;
+            display: block;
+            text-align: left;
+            padding: 1rem 1rem 1rem 3rem;
+            margin: 0 1rem 1rem 4rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+
+            @mixin atSmall {
+                display: inline-block;
+                text-align: center;
+                padding: 1rem 2rem;
+                margin: 0;
+                border-radius: 15% 55%;
+            }
+            @mixin atMedium {
+                font-weight: 500;
+                font-size: 1.25rem;
+            }
+            
+            &:hover {
+                background-color: $themeLight;
+                color: $themeDark;
+            }
+        
+        }
+        &--is-visible {
+            opacity: 1;
+            transform: scale(1);
+            z-index: 2;
+        }
     }
 }
