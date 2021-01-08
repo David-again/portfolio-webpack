@@ -1,3 +1,7 @@
+.projects-container {
+
+}
+
 .main-doc-projects {
     background-color: $themeMedium;
     padding: 1rem;
@@ -7,5 +11,68 @@
 
     &__text-content {
         text-align: justify;
+    }
+
+    
+
+}
+
+.main-doc-projects__project-icon {
+    position: relative;
+    background-color: red;
+    width: 250px; height: 260px;
+    display: inline-block;
+    
+    /* &--preview-image {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        &:hover {
+            filter: brightness(30%);
+            z-index: auto;
+        }
+    }
+
+    &--text-content {
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } */
+
+
+    /* Alternative version */
+    &--preview-image {
+        /* display: block; */
+        width: 100%;
+        height: auto;
+    }
+
+    &--overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: rgba($themeDark, 0.9);
+        /* background-color: #008CBA; */
+    }
+
+    &:hover &--overlay {
+        opacity: 1;
+    }
+
+    &--text-content {
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
