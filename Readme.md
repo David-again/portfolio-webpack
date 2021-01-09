@@ -1,8 +1,7 @@
-# David Ogunbanjo
-### webDeveloperPortfolio
+# Web Developer Portfolio
+### David Ogunbanjo.
 
-Developed (and will be deployed) using webpack, this page showcases my skills and projects I've worked on.
+Here's the source code for my Online Portfolio page.  Please look through to get a feel for my coding style.
+Developed (and deployed) using webpack, the page showcases my skills, as well as my ongoing and completed projects.
 
-Started on circa Dec2020
-
-Come back soon! 😎
+Continouosly being updated with links to my newer projects as they are pushed online upon completion.  Please check back soon! 😎

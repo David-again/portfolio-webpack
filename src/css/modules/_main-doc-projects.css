@@ -1,7 +1,3 @@
-.projects-container {
-
-}
-
 .main-doc-projects {
     background-color: $themeMedium;
     padding: 1rem;
@@ -12,30 +8,41 @@
     &__text-content {
         text-align: justify;
     }
+}
 
-    
+.projects-container {
+    & a {
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    & h3 {
+        text-align: center;
+    }
 
 }
 
 .main-doc-projects__project-icon {
     position: relative;
-    background-color: red;
-    width: 250px; height: 260px;
-    display: inline-block;
+    background-color: $themeDark;
+    width: 300px; height: 250px;
+    @mixin atSmall {
+        width: 400px;
+    }
 
     &--preview-image {
         /* display: block; */
-        width: 100%;
+        width: auto;
         height: 100%;
     }
 
     &--popout-icon {
         background: $themeDark;
+        color: #fff;
+        font-size: 1.5rem;
         padding: 0.3rem;
         position: absolute;
         top: 0.3rem; right: 0.3rem;
-        color: #fff;
-        font-size: 1.5rem;
         z-index:1;
     }
 
@@ -50,14 +57,14 @@
         opacity: 0;
         transition: 0.5s ease;
         background-color: rgba($themeDark, 0.9);
-        /* background-color: #008CBA; */
     }
 
-    &:hover &--overlay {
+    &:hover &--overlay, &:focus &--overlay, &:active &--overlay {
         opacity: 1;
     }
 
     &--text-content {
+        width: 90%;
         text-align: left;
         position: absolute;
         color: #fff;
@@ -65,8 +72,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
-        & h3 {
+        /* & h3 {
             text-align: center;
-        }
+        } */
     }
 }

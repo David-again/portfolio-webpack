@@ -1,14 +1,14 @@
 import _ from 'lodash';
 import '../css/styles.css';
 import MobileMenu from './modules/Mobile-Menu';
+import Modal from './modules/Modal';
 
+new Modal();
 let mobileMenu = new MobileMenu();
 
   if (module.hot) {
     module.hot.accept()
   }
-
-
 
 
 

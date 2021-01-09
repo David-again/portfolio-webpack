@@ -1,4 +1,8 @@
 .modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
     position: fixed;
     top: 10px;
     bottom: 10px;
@@ -8,14 +12,23 @@
     z-index: 5;
     display: flex;
 
+    &--is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
     &__inner {
         flex: 1;
         margin: auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     &__construction-image {
-        max-width: 50%;
+        max-width: 45%;
         height: auto;
+        padding-top: 2rem;
     }
 
     &__close {
