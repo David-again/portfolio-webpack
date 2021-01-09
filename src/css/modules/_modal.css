@@ -1,0 +1,35 @@
+.modal {
+    position: fixed;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.94);
+    z-index: 5;
+    display: flex;
+
+    &__inner {
+        flex: 1;
+        margin: auto;
+    }
+
+    &__construction-image {
+        max-width: 50%;
+        height: auto;
+    }
+
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 0.3rem;
+        font-size: 2rem;
+        color: $themeDark;
+        transform: scaleX(1.2);
+        cursor: pointer;
+
+        &:hover {
+            background-color: $themeLight;
+        }
+    }
+}

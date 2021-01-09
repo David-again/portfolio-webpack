@@ -22,32 +22,21 @@
     background-color: red;
     width: 250px; height: 260px;
     display: inline-block;
-    
-    /* &--preview-image {
-        width: 100%;
-        height: auto;
-        position: relative;
-        z-index: 1;
-        &:hover {
-            filter: brightness(30%);
-            z-index: auto;
-        }
-    }
 
-    &--text-content {
-        position: absolute;
-        color: #fff;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    } */
-
-
-    /* Alternative version */
     &--preview-image {
         /* display: block; */
         width: 100%;
-        height: auto;
+        height: 100%;
+    }
+
+    &--popout-icon {
+        background: $themeDark;
+        padding: 0.3rem;
+        position: absolute;
+        top: 0.3rem; right: 0.3rem;
+        color: #fff;
+        font-size: 1.5rem;
+        z-index:1;
     }
 
     &--overlay {
@@ -69,10 +58,15 @@
     }
 
     &--text-content {
+        text-align: left;
         position: absolute;
         color: #fff;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        & h3 {
+            text-align: center;
+        }
     }
 }
