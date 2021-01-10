@@ -25,15 +25,17 @@
 .main-doc-projects__project-icon {
     position: relative;
     background-color: $themeDark;
-    width: 300px; height: 250px;
-    @mixin atSmall {
-        width: 400px;
-    }
-
+    min-width: 300px;
+    min-height: 250px;
+    
     &--preview-image {
+        width: 300px; 
+        height: 250px;
+        object-fit: cover;
         /* display: block; */
-        width: auto;
-        height: 100%;
+        @mixin atSmall {
+            width: 400px;
+        }
     }
 
     &--popout-icon {
