@@ -9,3 +9,73 @@
         text-align: justify;
     }
 }
+
+.projects-container {
+    & a {
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    & h3 {
+        text-align: center;
+    }
+
+}
+
+.main-doc-projects__project-icon {
+    position: relative;
+    background-color: $themeDark;
+    min-width: 300px;
+    min-height: 250px;
+    
+    &--preview-image {
+        width: 300px; 
+        height: 250px;
+        object-fit: cover;
+        /* display: block; */
+        @mixin atSmall {
+            width: 400px;
+        }
+    }
+
+    &--popout-icon {
+        background: $themeDark;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 0.3rem;
+        position: absolute;
+        top: 0.3rem; right: 0.3rem;
+        z-index:1;
+    }
+
+    &--overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: rgba($themeDark, 0.9);
+    }
+
+    &:hover &--overlay, &:focus &--overlay, &:active &--overlay {
+        opacity: 1;
+    }
+
+    &--text-content {
+        width: 90%;
+        text-align: left;
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        /* & h3 {
+            text-align: center;
+        } */
+    }
+}

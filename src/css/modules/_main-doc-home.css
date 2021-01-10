@@ -2,19 +2,15 @@
     background-color: $themeDark;
     position: relative;
     max-height: 90vh;
+    min-height: 350px;
     overflow: hidden;
+    border-bottom: solid 0.75rem $themeDark;
 
     &__back-image{
         /* object-fit: cover; */
         /* position: fixed; */
         width: 100%;
-        filter: brightness(65%);
-        /* top: 0;
-        left: 0; */
-        /* right: 0;
-        bottom: 0; */
-        /* position: fixed; */
-        /* width: auto; */
+        filter: brightness(80%);
         /* height: 100vh; */
     }
     
