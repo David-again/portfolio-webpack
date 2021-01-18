@@ -27,6 +27,8 @@
     background-color: $themeDark;
     min-width: 300px;
     min-height: 250px;
+    overflow: hidden;
+    border-radius: 25px 0 30px 0;
     
     &--preview-image {
         width: 300px; 
