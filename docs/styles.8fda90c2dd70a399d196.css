@@ -706,6 +706,8 @@ body {
     background-color: #153e90;
     min-width: 300px;
     min-height: 250px;
+    overflow: hidden;
+    border-radius: 25px 0 30px 0;
 }
 
 .main-doc-projects__project-icon--preview-image {
