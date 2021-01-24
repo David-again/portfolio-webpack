@@ -1,6 +1,14 @@
 .main-doc-contact {
     background-color: $themeMedium;
+    padding: 1rem;
+    @mixin atMedium {
+        padding: 2.5rem;
+    }
     
+    &__text-content {
+        text-align: justify;
+    }
+
     & a {
         text-decoration: none;
     }
@@ -26,7 +34,7 @@
     &__copyright {
         margin: 0;
         font-size: 0.75rem;
-        padding-bottom: 4.5rem;
+        padding-bottom: 1rem;
     }
 }
 
