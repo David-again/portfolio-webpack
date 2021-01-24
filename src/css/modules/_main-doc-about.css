@@ -29,6 +29,16 @@
         padding: 2.5rem;
     }
 
+    & a {
+        /* text-decoration: none; */
+        font-weight: 700;
+
+        &:hover {
+            color: $themeLight;
+            background-color: $themeDark;
+        }
+    }
+
     &__text-content {
         text-align: justify;
         /* @media(min-width: 640px) { */

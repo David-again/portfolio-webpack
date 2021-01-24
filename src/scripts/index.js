@@ -3,6 +3,11 @@ import '../css/styles.css';
 import 'lazysizes';
 import MobileMenu from './modules/Mobile-Menu';
 // import Modal from './modules/Modal';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ReactComponent from './modules/ReactComponent';
+
+ReactDOM.render(<ReactComponent />, document.querySelector("#main-doc-react"));
 
 // new Modal();
 let mobileMenu = new MobileMenu();

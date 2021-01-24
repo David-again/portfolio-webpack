@@ -43,6 +43,16 @@ let config = {
         rules: [
             cssConfig,
             {
+                test: /\.js$/,
+                exclude: /(node_modules)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-react', '@babel/preset-env']
+                    }
+                }
+            },
+            {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
             },
@@ -81,17 +91,6 @@ if (currentTask == 'dev') {
 }
 
 if (currentTask == 'build') {
-    config.module.rules.push({
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: {
-            loader: 'babel-loader',
-            options: {
-                presets: ['@babel/preset-env']
-            }
-        }
-    })
-
     cssConfig.use.unshift(MiniCssExtractPlugin.loader)
     // postCSSPlugins.push(require('cssnano'))
     config.output = {
