@@ -636,6 +636,16 @@ body {
 }
     }
 
+.main-doc-about a {
+        /* text-decoration: none; */
+        font-weight: 700;
+    }
+
+.main-doc-about a:hover {
+            color: #bedcfa;
+            background-color: #153e90;
+        }
+
 .main-doc-about__text-content {
         text-align: justify;
     }
@@ -807,7 +817,19 @@ body {
 
 .main-doc-contact {
     background-color: #F3EFE0;
+    padding: 1rem;
 }
+
+@media (min-width: 800px) {
+
+.main-doc-contact {
+        padding: 2.5rem
+}
+    }
+
+.main-doc-contact__text-content {
+        text-align: justify;
+    }
 
 .main-doc-contact a {
         text-decoration: none;
@@ -839,7 +861,7 @@ body {
 .main-doc-contact__copyright {
         margin: 0;
         font-size: 0.75rem;
-        padding-bottom: 4.5rem;
+        padding-bottom: 1rem;
     }
 
 .footer {
