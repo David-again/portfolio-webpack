@@ -937,10 +937,38 @@ body {
             background-color: #bedcfa;
         }
 
-.feedback-form label {
+.feedback-form label, input, textarea {
     display:block;
+    width: 100%;
+    
 }
 
 .feedback-form {
-    background-color: yellow;
+    /* background-color: yellow; */
+    padding: 1rem 1rem;
 }
+
+@media (min-width: 530px) {
+
+.feedback-form {
+        padding: 1rem 2.5rem
+}
+    }
+
+.feedback-form-content {
+        text-align: left;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.feedback-submit-button {
+    background-color: #153e90;
+    color: #bedcfa;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+.feedback-submit-button:hover {
+        color: #fff;
+    }
