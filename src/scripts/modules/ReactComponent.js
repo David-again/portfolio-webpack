@@ -7,9 +7,8 @@ function ReactComponent() {
     return (
       <div>
         <h2>Contact me</h2>
-        <p> ... or provide feedback: </p>
-        {/* Leave me a message! */}
-        <p>{myVillains.random()}</p>
+        <p> I would love to hear from you.  Please email me, or connect on Github/LinkedIn.  Also, feel free to leave me a note here with the feedback form. </p>
+        {/* <p>{myVillains.random()}</p> */}
       </div>
     )
   }
