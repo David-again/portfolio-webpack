@@ -936,3 +936,11 @@ body {
 .modal__close:hover {
             background-color: #bedcfa;
         }
+
+.feedback-form label {
+    display:block;
+}
+
+.feedback-form {
+    background-color: yellow;
+}

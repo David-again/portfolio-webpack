@@ -3,6 +3,11 @@ import '../css/styles.css';
 import 'lazysizes';
 import MobileMenu from './modules/Mobile-Menu';
 // import Modal from './modules/Modal';
+
+// const myVillains = require('supervillains');
+// myVillains.all;
+// console.log(myVillains.random());
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactComponent from './modules/ReactComponent';
