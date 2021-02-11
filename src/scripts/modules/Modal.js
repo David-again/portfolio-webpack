@@ -40,13 +40,13 @@ class Modal {
 
             <div class="main-doc-contact">
                 <a href="mailto:d.ogunbanjo@yahoo.com?Enquiry from your Online Portfolio">
-                    <i class="main-doc-contact__icon fas fa-envelope"></i>
+                    <i class="icon__contact--themeDark fas fa-envelope"></i>
                 </a>
                 <a href="https://github.com/David-again" target="_blank">
-                    <i class="main-doc-contact__icon fab fa-github"></i>
+                    <i class="icon__contact--themeDark fab fa-github"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/seyiogunbanjo/" target="_blank">
-                    <i class="main-doc-contact__icon fab fa-linkedin-in"></i>
+                    <i class="icon__contact--themeDark fab fa-linkedin-in"></i>
                 </a>
                 <p class="main-doc-contact__copyright"> © 2020 Copyright <em>CodeDemon </em> </p>
             </div>

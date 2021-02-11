@@ -1,5 +1,5 @@
 .main-doc-skills {
-    background-color: $themeLight;
+    background-color: $themeMedium;
     padding: 1rem;
     /* @media(min-width: 640px) { */
     @mixin atMedium {

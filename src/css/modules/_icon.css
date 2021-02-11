@@ -1,5 +1,5 @@
 .icon__contact {
-    &--main-doc-home {
+    &--themeLight {
         color: $themeLight;
         padding: 1.2rem;
         font-size: 1.5rem;
@@ -14,7 +14,7 @@
         }
     }
 
-    &--main-doc-contact {
+    &--themeDark {
         color: $themeDark;
         font-size: 2rem;
         padding: 1.2rem;
