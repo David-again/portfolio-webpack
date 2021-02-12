@@ -7,6 +7,12 @@
     <title>Portfolio: David Ogunbanjo! </title>
     <!-- Script for font awesome (Used for social media links) -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- jQuery (required by slick) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Stylesheet for slick (carousel used in the skills section of this page). -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" /> -->
 </head>
 
 <body>
@@ -20,13 +26,14 @@
     <div class="navbar__menu-content">
         <a href="#home" class="nav-link">HOME</a>
         <a href="#about" class="nav-link">ABOUT</a>
-        <a href="#projects" class="nav-link">PROJECTS</a>
         <a href="#skills" class="nav-link">DEV-SKILLS</a>
+        <a href="#projects" class="nav-link">PROJECTS</a>
         <a href="#contact" class="nav-link">CONTACT</a>
     </div>
 
     <main id="main-doc">
 
+        <!-- home-page section -->
         <div class="main-doc-home" id="home">
             <picture>
                 <source srcset="images/home-bgnd/workstation-landscape1-1536x981.jpg" media="(min-width: 650px)">
@@ -38,14 +45,15 @@
                 <p class="main-doc-home__subtitle"> <strong> Web Development Portfolio </strong> </p>
 
                 <a href="mailto:d.ogunbanjo@yahoo.com?Enquiry from your Portfolio website">
-                    <i class="main-doc-home__icon fas fa-envelope"></i></a>
+                    <i class="icon__contact--themeLight fas fa-envelope"></i></a>
                 <a href="https://github.com/David-again" target="_blank">
-                    <i class="main-doc-home__icon fab fa-github"></i></a>
+                    <i class="icon__contact--themeLight fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/seyiogunbanjo/" target="_blank">
-                    <i class="main-doc-home__icon fab fa-linkedin-in"></i></a>
+                    <i class="icon__contact--themeLight fab fa-linkedin-in"></i></a>
             </div>
         </div>
 
+        <!-- about-me section -->
         <div class="main-doc-about" id="about">
             <div class="about-container section-wrapper">
                 <div class="main-doc-about__text-content main-doc-about__text-content--about-me">
@@ -68,11 +76,246 @@
             </div>
         </div>
 
+        <!-- my skills section  -->
+        <div class="main-doc-skills" id="skills">
+            <div class="section-wrapper">
+                <div class="main-doc-skills__text-content">
+                    <h2>Development Skills </h2>
+                    <!-- <p> Here are some technologies that I have experience working with: </p> -->
+                    A <em><strong> JavaScript Developer</strong></em>, I work mostly with Node.JS and ReactJS on the front-end side of things. <br> I remain open to (and continue to develop myself in) other technologies depending on the problem of the
+                    day.
+                    <div class="skills-container">
+                        <ul class="skills-list">
+                            <li><span class="skill-title"> JavaScript (ES6+) </span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">HTML(5)</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">CSS(3)</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">PostCSS</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">JSON</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">Node.JS</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">jQuery</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">React JS</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">webpack</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">BEM</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                        </ul>
+
+                        <ul class="skills-list">
+                            <li><span class="skill-title">Adobe Photoshop</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">MS Visual Basic</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">Bootstrap</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">Git/GitHub</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">mongoDB</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">NoSQL</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">MySQL</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">Postman</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li><span class="skill-title">Python</span>
+                                <span class="skill-rating">
+                                    <i class="fa fa-star icon__star--themeDark" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                    <i class="fa fa-star icon__star--themeLight" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="main-doc-skills__tech-gallery">
+                    <img class="main-doc-skills__tech-image" src="images/logos/js-es6-logo.png" alt="ECMA Script logo">
+                    <img class="main-doc-skills__tech-image" src="images/logos/reactJS-logo.png" alt="ReactJS logo">
+                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/nodeJS-logo.png" alt="NodeJS logo">
+                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/html-logo.png" alt="HTML logo">
+                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/css-logo.png" alt="CSS logo">
+                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/js-logo.png" alt="JavaScript logo">
+                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/jquery-text-logo.png" alt="jQuery logo">
+                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/mongoDB-logo.png" alt="MongoDB logo">
+                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/gcp-logo.png" alt="GCP logo">
+                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/aws-logo.png" alt="AWS logo">
+                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/adobe-photoshop-logo.png" alt="Photoshop logo">
+                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/bootstrap-logo.png" alt="Bootstrap logo">
+                </div>
+
+                <p>A good <s>pilot</s> <em> professional </em> is always learning! </p>
+
+                <!-- Testbed for Slick -->
+                <!-- <div class="regular slider">
+                    <div>
+                        <h3>1</h3>
+                    </div>
+                    <div>
+                        <h3>2</h3>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                    </div>
+                    <div>
+                        <h3>4</h3>
+                    </div>
+                    <div>
+                        <h3>5</h3>
+                    </div>
+                    <div>
+                        <h3>6</h3>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <!-- my projects section  -->
         <div class="main-doc-projects" id="projects">
             <div class="section-wrapper">
                 <div class="main-doc-projects__text-content">
                     <h2>My Projects </h2>
-                    <p> I believe that writing clean, efficient and re-usable code is a sure way to eliminate a lot of problems... now and in the future! <br> Take a look at some of my projects below.
+                    <ul>
+                        <li>I take a <em><strong>mobile-first approach</strong></em> to design; Check out my work on your mobile devices!</li>
+                        <li>I believe in <em><strong>clean and efficient code;</strong></em> My work is easily understandable, maintainable, expandable and even re-usable!</li>
+                        <li>I am open to critical input and <em><strong>enjoy collaboration;</strong></em> Please <a href="#contact">get in touch directly</a>.</li>
+                    </ul>
                 </div>
                 <hr>
 
@@ -93,21 +336,6 @@
                         </div>
                     </a>
 
-                    <!-- Icon for Landing Page Project -->
-                    <a href="#" class="under-construction">
-                        <div class="main-doc-projects__project-icon">
-                            <img class="main-doc-projects__project-icon--preview-image lazyload" data-src="images/projects/02-landing-page-2.jpg" alt="LandingPage Thumbnail">
-                            <i class="main-doc-projects__project-icon--popout-icon fas fa-external-link-alt"></i>
-                            <div class="main-doc-projects__project-icon--overlay">
-                                <div class="main-doc-projects__project-icon--text-content">
-                                    <h2>Product Landing Page</h2>
-                                    <hr>
-                                    <p> Main Landing Page for advertising a product. Part of a larger vendor website under development.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
                     <!-- Icon for PawTastic Project -->
                     <a href="https://david-again.github.io/pawtastic_pet-basics/" target="_blank">
                         <div class="main-doc-projects__project-icon">
@@ -118,39 +346,6 @@
                                     <h2>PawTastic</h2>
                                     <hr>
                                     <p> Registration page for a pet-grooming service; <br>Part of a larger website being developed using ReactJS.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Icon for Documentation Project. -->
-                    <a href="">
-                        <div class="main-doc-projects__project-icon">
-                            <img class="main-doc-projects__project-icon--preview-image lazyload" data-src="images/projects/04-tech-documentation-3.jpg" alt="Documentation Thumbnail">
-                            <i class="main-doc-projects__project-icon--popout-icon fas fa-external-link-alt"></i>
-                            <div class="main-doc-projects__project-icon--overlay">
-                                <div class="main-doc-projects__project-icon--text-content">
-                                    <h2>Tech. Documentation</h2>
-                                    <hr>
-                                    <p> A simple but structured Technical Documentation page for a hypothetical product. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <hr>
-
-                    <!-- Future Projects  -->
-                    <h3>FUTURE PROJECTS</h3>
-                    <!-- Boarding Pass Project  -->
-                    <a href="#" class="under-construction">
-                        <div class="main-doc-projects__project-icon">
-                            <img class="main-doc-projects__project-icon--preview-image lazyload" data-src="images/projects/05-boarding-pass-3.jpg" alt="All Aboard Thumbnail">
-                            <i class="main-doc-projects__project-icon--popout-icon fas fa-external-link-alt"></i>
-                            <div class="main-doc-projects__project-icon--overlay">
-                                <div class="main-doc-projects__project-icon--text-content">
-                                    <h2>All-Aboard</h2>
-                                    <hr>
-                                    <p> Web-based passenger check-in app for CRUD operations with MongoDB</p>
                                 </div>
                             </div>
                         </div>
@@ -171,33 +366,60 @@
                         </div>
                     </a>
 
+                    <!-- Future Projects  -->
+                    <hr>
+                    <h3>FUTURE PROJECTS</h3>
+                    <!-- Boarding Pass Project  -->
+                    <a href="#" class="under-construction">
+                        <div class="main-doc-projects__project-icon">
+                            <img class="main-doc-projects__project-icon--preview-image lazyload" data-src="images/projects/05-boarding-pass-3.jpg" alt="All Aboard Thumbnail">
+                            <i class="main-doc-projects__project-icon--popout-icon fas fa-external-link-alt"></i>
+                            <div class="main-doc-projects__project-icon--overlay">
+                                <div class="main-doc-projects__project-icon--text-content">
+                                    <h2>All-Aboard</h2>
+                                    <hr>
+                                    <p> Web-based passenger check-in app for CRUD operations with MongoDB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Icon for Landing Page Project -->
+                    <a href="#" class="under-construction">
+                        <div class="main-doc-projects__project-icon">
+                            <img class="main-doc-projects__project-icon--preview-image lazyload" data-src="images/projects/02-landing-page-2.jpg" alt="LandingPage Thumbnail">
+                            <i class="main-doc-projects__project-icon--popout-icon fas fa-external-link-alt"></i>
+                            <div class="main-doc-projects__project-icon--overlay">
+                                <div class="main-doc-projects__project-icon--text-content">
+                                    <h2>Product Landing Page</h2>
+                                    <hr>
+                                    <p> Main Landing Page for advertising a product. Part of a larger vendor website under development.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Icon for Documentation Project. -->
+                    <a href="#" class="under-construction">
+                        <div class="main-doc-projects__project-icon">
+                            <img class="main-doc-projects__project-icon--preview-image lazyload" data-src="images/projects/04-tech-documentation-3.jpg" alt="Documentation Thumbnail">
+                            <i class="main-doc-projects__project-icon--popout-icon fas fa-external-link-alt"></i>
+                            <div class="main-doc-projects__project-icon--overlay">
+                                <div class="main-doc-projects__project-icon--text-content">
+                                    <h2>Tech. Documentation</h2>
+                                    <hr>
+                                    <p> A simple but structured Technical Documentation page for a hypothetical product. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
                 </div>
             </div>
         </div>
 
-        <div class="main-doc-skills" id="skills">
-            <div class="section-wrapper">
-                <div class="main-doc-skills__text-content">
-                    <h2>Web Development Skills </h2>
-                    <p> Here are some technologies that I have experience working with: </p>
-                </div>
-                <div class="main-doc-skills__tech-gallery">
-                    <img class="main-doc-skills__tech-image" src="images/logos/js-es6-logo.png" alt="ECMA Script logo">
-                    <img class="main-doc-skills__tech-image" src="images/logos/reactJS-logo.png" alt="ReactJS logo">
-                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/nodeJS-logo.png" alt="NodeJS logo">
-                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/html-logo.png" alt="HTML logo">
-                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/css-logo.png" alt="CSS logo">
-                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/js-logo.png" alt="JavaScript logo">
-                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/jquery-text-logo.png" alt="jQuery logo">
-                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/mongoDB-logo.png" alt="MongoDB logo">
-                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/gcp-logo.png" alt="GCP logo">
-                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/aws-logo.png" alt="AWS logo">
-                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/adobe-photoshop-logo.png" alt="Photoshop logo">
-                    <img class="main-doc-skills__tech-image lazyload" data-src="images/logos/bootstrap-logo.png" alt="Bootstrap logo">
-                </div>
-            </div>
-        </div>
-
+        <!-- contact me section -->
         <div class="main-doc-contact" id="contact">
             <div class="section-wrapper">
                 <div class="main-doc-contact__text-content">
@@ -208,18 +430,18 @@
 
 
                 <a href="mailto:d.ogunbanjo@yahoo.com?Enquiry from your Online Portfolio">
-                    <i class="main-doc-contact__icon fas fa-envelope"></i>
+                    <i class="icon__contact--themeDark fas fa-envelope"></i>
                 </a>
                 <a href="https://github.com/David-again" target="_blank">
-                    <i class="main-doc-contact__icon fab fa-github"></i>
+                    <i class="icon__contact--themeDark fab fa-github"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/seyiogunbanjo/" target="_blank">
-                    <i class="main-doc-contact__icon fab fa-linkedin-in"></i>
+                    <i class="icon__contact--themeDark fab fa-linkedin-in"></i>
                 </a>
                 <a href="#" class="under-construction">
                     <!-- <a href="#" target="_blank"> -->
                     <!-- This will link to a feedback page (react route) -->
-                    <i class="main-doc-contact__icon fas fa-comment-alt"></i>
+                    <i class="icon__contact--themeDark fas fa-comment-alt"></i>
                 </a>
                 <p class="main-doc-contact__copyright"> &copy 2020 -
                     <script>
@@ -235,6 +457,11 @@
         <p>...if you can <strong><em>conceive</em></strong> it, We can <strong><em>design</em></strong> it !</p>
     </footer>
     <!-- <script src="bundle.js"></script> -->
+
+
+    <!-- Script for Slick carousel -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./scripts/modules/Slider.js"></script> -->
 </body>
 
 </html>

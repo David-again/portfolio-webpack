@@ -1,5 +1,5 @@
 .main-doc-projects {
-    background-color: $themeMedium;
+    background-color: $themeLight;
     padding: 1rem;
     @mixin atMedium {
         padding: 2.5rem;
@@ -42,6 +42,7 @@
 
     &--popout-icon {
         background: $themeDark;
+        border-radius: 10px 0;
         color: #fff;
         font-size: 1.5rem;
         padding: 0.3rem;

@@ -1,0 +1,46 @@
+.icon__contact {
+    &--themeLight {
+        color: $themeLight;
+        padding: 1.2rem;
+        font-size: 1.5rem;
+        @mixin atMedium {
+            font-size: 2rem;
+            border-radius: 15% 40%;
+        }
+        
+        &:hover {
+            color: $themeDark;
+            background-color: $themeLight;
+        }
+    }
+
+    &--themeDark {
+        color: $themeDark;
+        font-size: 2rem;
+        padding: 1.2rem;
+        /* @media(min-width: 640px) { */
+        @mixin atMedium {
+            font-size: 2.5rem;
+            padding: 1.2rem 2rem;
+            border-radius: 15% 40%;
+            /* border: solid 2px; */
+        }
+        
+        &:hover {
+            color: $themeLight;
+            background-color: $themeDark;
+        }
+    }
+}
+
+.icon__star--themeDark {
+    color: $themeDark;
+}
+
+.icon__star--themeMedium {
+    color: $themeMedium;
+}
+
+.icon__star--themeLight {
+    color: $themeLight;
+}

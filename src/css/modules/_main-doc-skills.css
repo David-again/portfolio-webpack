@@ -1,5 +1,5 @@
 .main-doc-skills {
-    background-color: $themeLight;
+    background-color: $themeMedium;
     padding: 1rem;
     /* @media(min-width: 640px) { */
     @mixin atMedium {
@@ -26,3 +26,39 @@
     }
 }
 
+.skills-container {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:         
+        "skills-group-1"
+        "skills-group-2";
+}
+
+@mixin atMedium {
+    .skills-container {
+        grid-gap: 2rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "skills-group-1 skills-group-2";
+    }
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-title {
+    display: inline-block;
+    width: 160px;
+}
+
+.skill-rating {
+    /* margin-left: 1rem; */
+}
