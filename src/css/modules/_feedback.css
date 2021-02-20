@@ -1,0 +1,31 @@
+.feedback-form label, input, textarea {
+    display:block;
+    width: 100%;
+    
+}
+
+.feedback-form {
+    /* background-color: yellow; */
+    padding: 1rem 1rem;
+    @mixin atSmall {
+        padding: 1rem 2.5rem;
+    }
+    
+        &-content {
+        text-align: left;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.feedback-submit-button {
+    background-color: $themeDark;
+    color: $themeLight;
+    padding: 7px;
+    margin-top: 10px;
+
+    &:hover {
+        color: #fff;
+    }
+}
