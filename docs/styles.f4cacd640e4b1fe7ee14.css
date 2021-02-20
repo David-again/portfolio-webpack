@@ -934,7 +934,6 @@ body {
             background-color: #bedcfa;
         }
 
-<<<<<<< HEAD:docs/styles.5ec8d290924070dea864.css
 .icon__contact--themeLight {
         color: #bedcfa;
         padding: 1.2rem;
@@ -986,7 +985,8 @@ body {
 
 .icon__star--themeLight {
     color: #bedcfa;
-=======
+}
+
 .feedback-form label, input, textarea {
     display:block;
     width: 100%;
@@ -1047,5 +1047,5 @@ z-index: 1;
 
 .tooltip:hover .tooltiptext {
 visibility: visible;
->>>>>>> integrate-backend:docs/styles.54c358852fabbe851cc5.css
 }
+
