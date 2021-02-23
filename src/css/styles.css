@@ -4,13 +4,65 @@
 @import "./base/_mixins.css";
 @import "./modules/_navbar.css";
 @import "./modules/_main-doc-home.css";
-@import "./modules/_main-doc-about.css";
+/* @import "./modules/_main-doc-about.css";
 @import "./modules/_main-doc-projects.css";
 @import "./modules/_main-doc-skills.css";
 @import "./modules/_main-doc-contact.css";
 @import "./modules/_footer.css";
 @import "./modules/_modal.css";
-@import "./modules/_icon.css";
+@import "./modules/_icon.css"; */
 
-@import "./modules/_feedback.css";
-@import "./modules/_tooltip.css";
+/* @import "./modules/_feedback.css";
+@import "./modules/_tooltip.css"; */
+
+
+body{
+    font-family: 'Noto Sans', Arial, serif;
+    font-weight: 400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height: 1.618em;
+    background: $themeLight;
+    background-size: cover;
+}
+h2{
+    font-family: 'Noto Sans', Arial, serif;
+    font-weight: 700;
+    font-size:40px;
+    line-height: 1.618em;
+}
+section{
+    max-width:800px;
+    margin:8% auto 1em auto;
+    background-color:#222;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+    color:#fff;
+    padding:1em 5%;
+}
+
+a{
+    color: #00CC66;
+}
+a:focus{
+    outline:none;
+    outline-offset:inherit;
+}
+@media (max-device-width: 1027px) {
+
+    body{
+        text-align:center;
+        font-size:larger;
+    }
+    section{
+        max-width: 90%;
+    }
+
+}
+
+@media (max-device-width: 640px) {
+    section{
+        max-width: 97%;
+    }
+
+}
