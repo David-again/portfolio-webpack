@@ -1,7 +1,12 @@
-# Web Developer Portfolio
-### David Ogunbanjo.
+# Old version of my Portfolio
+## New version available here: 
+https://github.com/David-again/portfolio-live
 
-Here's the source code for my Online Portfolio page.  Please look through to get a feel for my coding style.
-Developed (and deployed) using webpack, the page showcases my skills, as well as my ongoing and completed projects.
 
-Continouosly being updated with links to my newer projects as they are pushed online upon completion.  Please check back soon! 😎
+### Important Note!!!
+
+This repo is NOT the latest version of my online portfolio.  Follow link above (or [click here](https://github.com/David-again/portfolio-live)) for the latest version.
+
+
+Nonetheless, this repository provides perspective on the developmental history of the said portfolio; Feel free to inspect!
+
